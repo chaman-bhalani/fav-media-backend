@@ -6,8 +6,8 @@
     "build": "tsc",
     "dev": "tsx -r dotenv/config src/index.ts",
     "start": "node -r dotenv/config dist/index.js",
-    "postinstall": "prisma generate",
-    "render-build": "prisma migrate deploy && npm run build"
+    "postinstall": "npx prisma generate",
+    "render-build": "npx prisma migrate deploy && npm run build"
   },
   "dependencies": {
     "@prisma/client": "^6.2.0",
